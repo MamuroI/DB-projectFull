@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    font-family: "Lato";
+}
+.body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.navbar{
+    color: Black;
+    text-decoration:none;
+    background-color: white;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+}
+.nav-link:hover{
+    color: black;
+}
+.navbar-brand{
+    color: Black;
+    text-decoration: none;
+}
+#Brandname{
+    font-size: 30px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+.Usericon{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+.container{
+    margin-top: 100px;
+}
+.carousel-item img{
+    height: 900px;
+    width: auto;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: -300px;
+}
+.ImageCard{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+}
+.CardImage{
+    height: 300px;
+    width: auto;
+}
+.CardTitle{
+    font-size: 30px;
+}
+.Footer{
+    text-align: center;
+    font-size: 15px;
+}
+
