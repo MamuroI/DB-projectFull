@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 12, 2020 at 08:35 PM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.2.32
+-- Generation Time: Sep 15, 2020 at 08:52 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.2.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,9 +38,8 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`Account_id`, `Customer_id`, `Trip_id`) VALUES
-(77, 1, 13),
-(78, 1, 13),
-(79, 1, 13);
+(80, 23, 15),
+(81, 23, 15);
 
 -- --------------------------------------------------------
 
@@ -63,7 +62,8 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`Customer_id`, `C_Name`, `C_Email`, `C_TelNo`, `C_Username`, `C_Password`, `C_Trip_List`) VALUES
-(1, 'admin', 'admin@test.com', '1234567890', 'admin', 'test', '');
+(1, 'admin', 'admin@test.com', '1234567890', 'admin', 'test', ''),
+(23, 'test', 'test@test.com', '1234567890', 'test', 'test', '');
 
 -- --------------------------------------------------------
 
@@ -138,8 +138,10 @@ CREATE TABLE `trip_detail` (
 --
 
 INSERT INTO `trip_detail` (`Trip_id`, `T_name`, `T_description`, `T_date`, `T_price`, `T_seat`) VALUES
-(13, 'test', 'test', '2020-09-24', 144, 3),
-(14, 'daimond', 'akdnjksdfksdfjkbsdklfksdfbkasbfksbkbskgbasdkbxkbv bhjkedfbfgiousdnfjlsdhfguishfsdkghuidrhfksdffgui', '2020-09-23', 300, 0);
+(15, 'Bronze', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor pharetra dictum. In vitae efficitur mi. Nullam lacinia maximus odio ac imperdiet. Aliquam erat volutpat. Proin elementum commodo', '2020-09-26', 2499, 2),
+(18, 'Silver', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor pharetra dictum. In vitae efficitur mi. Nullam lacinia maximus odio ac imperdiet. Aliquam erat volutpat. Proin elementum commodo', '2020-09-27', 3499, 0),
+(20, 'Gold', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor pharetra dictum. In vitae efficitur mi. Nullam lacinia maximus odio ac imperdiet. Aliquam erat volutpat. Proin elementum commodo', '2020-09-28', 5499, 0),
+(21, 'Platinum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor pharetra dictum. In vitae efficitur mi. Nullam lacinia maximus odio ac imperdiet. Aliquam erat volutpat. Proin elementum commodo', '2020-09-30', 7599, 0);
 
 --
 -- Indexes for dumped tables
@@ -193,13 +195,13 @@ ALTER TABLE `trip_detail`
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `Account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+  MODIFY `Account_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `Customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `Customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `employee`
@@ -217,7 +219,7 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT for table `trip_detail`
 --
 ALTER TABLE `trip_detail`
-  MODIFY `Trip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `Trip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Constraints for dumped tables
